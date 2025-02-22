@@ -1,7 +1,12 @@
 import React from 'react';
+import Accordion from './components/accordion/accordion';
 
 const App = () => {
-  return <div>React app</div>;
+  return (
+    <>
+      <Accordion />
+    </>
+  );
 };
 
 export default App;

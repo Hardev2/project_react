@@ -10,6 +10,7 @@ import HomePage from './Pages/HomePage';
 import MainLayout from './Layout/MainLayout';
 import Accordion from './components/accordion/accordion';
 import HexColor from './components/HexColor/HexColor';
+import StarRating from './components/StarRating/StarRating';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const App = () => {
         <Route index element={<HomePage />} />
         <Route path='/accordion' element={<Accordion />} />
         <Route path='/hex' element={<HexColor />} />
+        <Route path='/star' element={<StarRating noOfStars={10} />} />
       </Route>
     )
   );

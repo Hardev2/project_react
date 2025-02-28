@@ -32,6 +32,13 @@ const Cards = () => {
           </div>
         </Link>
       </div>
+      <div className={cardStyle} style={{ backgroundColor: getRandomColor() }}>
+        <Link to='/star'>
+          <div className='flex items-center justify-center w-full h-full text-white'>
+            <h1 className='mix-blend-difference'>Star Rating</h1>
+          </div>
+        </Link>
+      </div>
     </>
   );
 };

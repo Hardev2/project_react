@@ -15,6 +15,10 @@ import ImageSlider from './components/ImageSlider/ImageSlider';
 import LoadMore from './components/LoadMore/LoadMore';
 import TreeNav from './components/TreeNav/TreeNav';
 import { sideMenu } from './components/TreeNav/data';
+import Counter from './components/Counter/Counter';
+import QrCode from './components/QrCode/QrCode';
+import PassGenerate from './components/PasswordGenerator/PassGenerate';
+import DarkMode from './components/DarkMode/DarkMode';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -27,6 +31,10 @@ const App = () => {
         <Route path='/slider' element={<ImageSlider />} />
         <Route path='/load_more' element={<LoadMore />} />
         <Route path='/tree_nav' element={<TreeNav menus={sideMenu} />} />
+        <Route path='/counter' element={<Counter />} />
+        <Route path='/qr_code' element={<QrCode />} />
+        <Route path='/password_generate' element={<PassGenerate />} />
+        <Route path='/dark_mode' element={<DarkMode />} />
       </Route>
     )
   );

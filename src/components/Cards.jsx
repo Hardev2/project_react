@@ -23,6 +23,10 @@ const Cards = () => {
     { title: 'Image Slider', link: '/slider' },
     { title: 'Load More Button', link: '/load_more' },
     { title: 'Tree Navigation', link: '/tree_nav' },
+    { title: 'Counter', link: '/counter' },
+    { title: 'QR Code Generator', link: '/qr_code' },
+    { title: 'Password Generator', link: '/password_generate' },
+    { title: 'Dark Mode', link: '/dark_mode' },
   ];
 
   return (

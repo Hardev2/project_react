@@ -19,6 +19,7 @@ import Counter from './components/Counter/Counter';
 import QrCode from './components/QrCode/QrCode';
 import PassGenerate from './components/PasswordGenerator/PassGenerate';
 import DarkMode from './components/DarkMode/DarkMode';
+import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -35,6 +36,7 @@ const App = () => {
         <Route path='/qr_code' element={<QrCode />} />
         <Route path='/password_generate' element={<PassGenerate />} />
         <Route path='/dark_mode' element={<DarkMode />} />
+        <Route path='/scroll_indicator' element={<ScrollIndicator />} />
       </Route>
     )
   );

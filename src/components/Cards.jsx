@@ -27,6 +27,7 @@ const Cards = () => {
     { title: 'QR Code Generator', link: '/qr_code' },
     { title: 'Password Generator', link: '/password_generate' },
     { title: 'Dark Mode', link: '/dark_mode' },
+    { title: 'Scroll Indicator', link: '/scroll_indicator' },
   ];
 
   return (

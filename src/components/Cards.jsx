@@ -28,6 +28,7 @@ const Cards = () => {
     { title: 'Password Generator', link: '/password_generate' },
     { title: 'Dark Mode', link: '/dark_mode' },
     { title: 'Scroll Indicator', link: '/scroll_indicator' },
+    { title: 'Tab', link: '/tab' },
   ];
 
   return (

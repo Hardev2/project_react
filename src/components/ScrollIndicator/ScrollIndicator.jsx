@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import useFetch from '../UseFetch';
+import UseFetch from '../UseFetch';
 import Spinner from '../Spinner';
+
 const ScrollIndicator = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const {
     data: fetchData,
-    isLoading,
     error,
-  } = useFetch(`https://dummyjson.com/products?limit=100`);
+    isLoading,
+  } = UseFetch(`https://dummyjson.com/products?limit=100`);
 
   const products = fetchData.products || [];
 
@@ -26,21 +27,21 @@ const ScrollIndicator = () => {
     window.addEventListener('scroll', handleScrollPercentage);
 
     return () => {
-      window.removeEventListener('scroll', () => {});
+      window.removeEventListener('scroll', handleScrollPercentage);
     };
   }, []);
 
+  console.log(scrollPercentage);
   return (
-    <div className='flex items-center justify-center flex-col'>
-      <div className='fixed bottom-0 z-[1] w-full text-center bg-gray-800 p-4'>
-        <div className='w-full h-3 bg-green-400 rounded'>
+    <div className='w-full flex flex-col items-center justify-center'>
+      <div className='fixed bg-gray-900 bottom-0 w-full'>
+        <div className='h-3 bg-green-500'>
           <div
-            className='h-3 bg-red-500 w-0 rounded'
+            className='h-3 bg-red-400'
             style={{ width: `${scrollPercentage}%` }}></div>
         </div>
       </div>
-      <h1 className='text-[2rem] mt-8'>Custom Scroll Indicator</h1>
-
+      <h1>Custom Scroll Indicator</h1>
       {error && <div>{error}</div>}
       {isLoading ? (
         <Spinner isLoading={isLoading} />

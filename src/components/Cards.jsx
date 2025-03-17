@@ -29,6 +29,8 @@ const Cards = () => {
     { title: 'Dark Mode', link: '/dark_mode' },
     { title: 'Scroll Indicator', link: '/scroll_indicator' },
     { title: 'Tab', link: '/tab' },
+    { title: 'Calculator', link: '/calculator' },
+    { title: 'Image Horizontal Scroll', link: '/gsap' },
   ];
 
   return (

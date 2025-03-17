@@ -20,8 +20,9 @@ import QrCode from './components/QrCode/QrCode';
 import PassGenerate from './components/PasswordGenerator/PassGenerate';
 import DarkMode from './components/DarkMode/DarkMode';
 import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator';
-
 import CustomTab from './components/Tab/CustomTab';
+import Calculator from './components/CalculatorApp/Calculator';
+import HorizontalSlider from './components/ImageGsap/HorizontalSlider';
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -39,6 +40,8 @@ const App = () => {
         <Route path='/dark_mode' element={<DarkMode />} />
         <Route path='/scroll_indicator' element={<ScrollIndicator />} />
         <Route path='/tab' element={<CustomTab />} />
+        <Route path='/calculator' element={<Calculator />} />
+        <Route path='/gsap' element={<HorizontalSlider />} />
       </Route>
     )
   );

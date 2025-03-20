@@ -31,6 +31,7 @@ const Cards = () => {
     { title: 'Tab', link: '/tab' },
     { title: 'Calculator', link: '/calculator' },
     { title: 'Image Horizontal Scroll', link: '/gsap' },
+    { title: 'Modal Popup', link: '/modal' },
   ];
 
   return (

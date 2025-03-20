@@ -23,6 +23,8 @@ import ScrollIndicator from './components/ScrollIndicator/ScrollIndicator';
 import CustomTab from './components/Tab/CustomTab';
 import Calculator from './components/CalculatorApp/Calculator';
 import HorizontalSlider from './components/ImageGsap/HorizontalSlider';
+import Modal from './components/ModalPopup/Modal';
+
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -42,6 +44,7 @@ const App = () => {
         <Route path='/tab' element={<CustomTab />} />
         <Route path='/calculator' element={<Calculator />} />
         <Route path='/gsap' element={<HorizontalSlider />} />
+        <Route path='/modal' element={<Modal />} />
       </Route>
     )
   );
